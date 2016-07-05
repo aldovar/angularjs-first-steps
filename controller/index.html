@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="first-steps">
+<head>
+    <meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+<body ng-controller="firstCtrl as ctrl">
+
+   <br>
+    
+    <!--|filter : search | order by:'age'" ng-if="user.age<40">-->
+    
+    <ul>
+        <li ng-repeat="user in ctrl.users"> 
+            Alo {{user.name}} is {{user.age}} 
+        </li>
+    </ul>
+    
+     <li>{{ctrl.name}}</li>
+    <li>{{ctrl.age}}</li>
+    <li>{{ctrl.number}}</li>
+    <li>{{ctrl.text}}</li>
+    
+    
+    <input type="text" ng-model="search.name">
+    <button ng-click="ctrl.click()">Click!</button>
+    
+    <table style="border:1px solid blue;" border="1">
+        <tr ng-repeat="user in ctrl.users">
+            <td>{{$index+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{use.country}}</td>
+            <td><button ng-click="ctrl.ruco(user)">Older</button></td>
+        </tr>
+    </table>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
