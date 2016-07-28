@@ -1,0 +1,14 @@
+(function(){
+    'use strict'
+    
+    angular
+        .module('chat-app')
+        .factory('chatData',chatData);
+    
+    function chatData($firebaseArray){
+        //var link = new Firebase('https://chatnegrabatch10.firebaseio.com/message')
+        var link = new Firebase('https://testing-db-a1a14.firebaseio.com/message')
+        
+        return $firebaseArray(link);
+    }
+})();

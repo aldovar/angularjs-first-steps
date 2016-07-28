@@ -1,0 +1,11 @@
+<nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down" ng-if="$ctrl.userLoggedIn">
+            <li><a href="#/data">Data</a></li>
+            <li><a href="#/agregar">Add</a></li>
+            <li>Bienvenido!, {{$ctrl.userLogin.password.email}}</li>
+            <li><a ng-click="$ctrl.logout()">Logout</a></li>
+            </ul>
+        </div>
+</nav>

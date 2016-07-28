@@ -2,16 +2,19 @@
     'use strict'
     
     angular
-        .module('routes')
+        .module('login')
         .config(config)
     
     function config($routeProvider){
         $routeProvider
-            .when('/',{
-                template:'<card></card>'
+            .when('/register',{
+                template:'<add></add>'
         })
-        .when('/parallax',{
-            templateUrl:'app/components/parallax/index.html'
+        .when('/list',{
+            template:'<list></list>'
+        })
+        .when('/login',{
+            template:'<log></log>'
         })
         .otherwise({
             redirectTo:'/'

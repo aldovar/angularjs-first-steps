@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li ng-repeat="data in $ctrl.data">
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{data.name}}</div>
+                <div class="collapsible-body">
+                    <p>{{data.email}}</p>
+                    <p>{{data.text}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

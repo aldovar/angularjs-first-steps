@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="routes">
+<html lang="es" ng-app="chat-app">
     <head>
         <meta charset="utf-8">
-        <title>Just Coding Routes.</title>
+        <title>Just Coding a Chat.</title>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
@@ -10,18 +10,18 @@
     <body>
         {{1+1}}
         
-        <div ng-view>
-            
-        </div>
+        <chat></chat>
         
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+        <!-- Firebase -->
+        <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+        <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
         <script src="app/app.js"></script>
-        <script src="app/routes/routes.js"></script>
-        
-        <script src="app/components/card.js"></script>
+        <script src="app/factory/factory.js"></script>
+        <script src="app/component/chat_component.js"></script>
     </body>
     
 </html>
